@@ -1,0 +1,87 @@
+body {
+    background: #000;
+    font-family: "Lucida Grande", "Lucida Sans", Arial, Sans-serif;
+}
+
+#juego {
+    background: url(img/img.jpg) 0 0 no-repeat;
+    padding: 0;
+    width: 800px;
+    min-height: 384px;
+    margin: 1em auto;
+}
+
+#juego h1{
+    text-align: center;
+    margin: 1em;
+}
+
+
+#piedra,
+#papel,
+#tijera{
+    width: 130px;
+    height: 130px;
+    border-radius:50%;
+    margin: 0;
+    border: 1px solid rgba(0,0,0,0);
+    padding: 0;
+    display:inline-block;
+    position:relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+#piedra:hover,
+#papel:hover,
+#tijera:hover{
+    background: rgba(0,0,0,0.2);
+}
+#piedra {
+    margin: 4em 0 0 8em;
+}
+
+#papel {
+    margin: 4em 0 0 5em;
+}
+#tijera {
+    margin: 4em 0 0 4em;
+}
+
+#informacion {
+    background: #000;
+    margin-left: 30em;
+    padding: 0 1em;
+    width: 800px;
+}
+
+#informacion p{
+    float: left;
+}
+
+#efecto {
+    position: absolute;
+    background: rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    transition: all 0.1s;
+}
+
+#efecto h1 {
+    text-align: center;
+    font-size: 5em;
+    color: #fff;
+    margin: 2em 0 0;
+    padding: 0;
+    line-height: 1em;
+}
+#efecto h3 {
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    color: #ddd;
+}
