@@ -10,8 +10,8 @@ function aleatorio(minimo, maximo){
 function usuario(eleccionUsuario){
     eleccionUsuario = parseInt(eleccionUsuario);
     eleccionMaquina = aleatorio(0,2);
-    alert(eleccionUsuario);
-    alert(eleccionMaquina);
+    //alert(eleccionUsuario);
+    //alert(eleccionMaquina);
 
     if(eleccionUsuario == 0){//el usuario eligio piedra 
         if(opciones[eleccionMaquina] == 1){//si la maquina eligio papel 
